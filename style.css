@@ -1,0 +1,817 @@
+
+  
+  .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .interest-form-btn {
+    padding: 10px 20px;
+    background-color: #222;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    margin-top: 150px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  
+  .hero h1 span:nth-child(2) {
+    color: purple;
+  }
+  
+  .hero p {
+    margin: 20px auto;
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: purple;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #121212;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    display: flex; /* Use flexbox for layout */
+    
+
+  }
+  .arrow-icon {
+    display: flex; /* Use flexbox for icon layout */
+    justify-content: center; /* Center icon */
+    align-items: center; /* Center icon */
+    width: 25px; /* Width of the circle */
+    height: 25px; /* Height of the circle */
+    border-radius: 50%; /* Make it circular */
+    background-color: white; /* Background color for the circle */
+    border: 1px solid #2A2335; /* Border for the circle */
+    margin-left: 10px; /* Space between text and icon */
+}
+
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar .logo img {
+    width: 100px;
+    margin-right: 10px;
+    height: auto;
+  }
+  .logo-image {
+    width: 30px; /* Set the desired width for the logo */
+    height: 50px; /* Maintain aspect ratio */
+    margin-right: 7px; /* Space between the logo and the text */
+}
+
+  .navbar .nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Reduced gap for better spacing */
+    flex: 1;
+  }
+
+  .navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+
+  .navbar .nav-links a:hover {
+    color: #a3a3ff;
+  }
+
+  .navbar .cta-button {
+    background: #252525;
+    color: #646467;
+    padding: 8px 16px; /* Adjusted padding */
+    border: 1px solid #2A2335;
+    border-radius: 2 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    white-space: nowrap; /* Ensures the text doesn't break */
+    font-size: 1rem;
+  }
+  .cta-button {
+    display: flex; /* Use flexbox for button layout */
+    align-items: center; /* Center items vertically */
+    background-color: #222223; /* Background color for the button */
+    color: rgb(225, 215, 215); /* Text color */
+    padding: 10px 15px; /* Padding for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1em; /* Font size */
+    position: relative; /* Positioning context for the icon */
+}
+
+  .navbar .cta-button:hover {
+    background: #bebee4;
+    color: black;
+  }
+
+  .hero {
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    max-width: 90%;
+    position: relative;
+    padding: 50px 20px;
+    
+  }
+  .gradient-text {
+    background: linear-gradient(270deg, #B57FFF 33.18%, #F2F0F5 65.22%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("Background.png") no-repeat center center / cover;
+    opacity: 0.2; /* Set transparency to 20% */
+    z-index: -1;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .hero h1 span {
+    color: #a3a3ff;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ccc;
+  }
+
+  .hero button {
+    font-size: 1rem;
+    padding: 15px 30px;
+    background: #121212;
+    border: 1px solid #2A2335;
+    border-radius: 25px;
+    color: #a3a3ff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .hero button:hover {
+    background: #a3a3ff;
+    color: black;
+  }
+
+  .hero-slider {
+    position: relative; /* Allow positioning of child elements inside it */
+    width: 1440px;
+    height: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid black;
+    background: radial-gradient(
+        circle at 53.47% 50.05%,
+        rgba(0, 0, 0, 0) 44.6%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url("./Background.png");
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.8;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  /* Built-in AI Diagnostic Capabilities */
+  .first-sentence {
+    position: absolute;
+    width: 360px;
+    height: 90px;
+    top: 20px; /* Distance from top */
+    right: 20px; /* Distance from the right */
+
+    font-family: "Inter", sans-serif; /* Correct font family */
+    font-style: normal;
+    font-weight: 400; /* Correct weight */
+    font-size: 36px; /* Correct size */
+    line-height: 45px; /* Correct line height */
+    letter-spacing: -0.5px; /* Correct letter-spacing */
+
+    display: flex;
+    align-items: center;
+
+    color: #a590c1;
+  }
+  .second-sentence {
+    position: absolute;
+    width: 360px;
+    height: 90px;
+    bottom: 20px; /* Distance from bottom */
+    left: 20px; /* Distance from the left */
+
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.5px;
+
+    display: flex;
+    align-items: center;
+
+    color: #a590c1;
+  }
+  .team-sentence {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Vertically center the text */
+    position: relative; /* Change to relative for proper positioning */
+    width: 100%; /* Full width of the container */
+    height: auto; /* Allow height to adjust based on content */
+    margin-bottom: 60px; /* Increased space below the sentence */
+    font-family: 'Inter', sans-serif; /* Ensure the font is consistent */
+    font-size: 36px; /* Font size */
+    color: #A590C1; /* Text color */
+}
+
+  /* Company symbols */
+  .company-symbols {
+    display: flex;
+    justify-content: space-between; /* Space out the symbols */
+    align-items: center; /* Vertically center the symbols */
+    width: 100%; /* Full width of the container */
+    max-width: 800px; /* Set a max-width as per your requirement */
+    margin-top: 20px; /* Reduced margin-top to make space from the sentence */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px; /* Add padding to the sides */
+  }
+
+  .company-symbols img {
+    width: 100px; /* Increased the width of the company symbols */
+    height: auto;
+    margin: 0 15px; /* Add space between symbols */
+  }
+ 
+
+  .headline-container {
+    text-align: left; /* Align text to the left */
+    margin-top: 205px; /* Space above the headline */
+    padding-left: 100px; /* Add left padding */
+    width: 100%; /* Set the width */
+    height: 154px; /* Set the height */
+}
+
+.headline {
+    margin-left: 10%; /* Remove left margin for the headline */
+    font-family: 'Inter', sans-serif; /* Set the font */
+    font-weight: 600; /* Set the font weight */
+    font-size: 64px; /* Set the font size */
+    line-height: 77px; /* Set the line height */
+}
+.description-container {
+    text-align: left; /* Align text to the left */
+    margin-top: 100px;
+    padding-left: 100px; /* Add left padding */
+    width: 100%; /* Set the width */
+    height: 144px; /* Set the height */
+    font-family: 'Inter', sans-serif; /* Set the font */
+    font-weight: 400; /* Set the font weight */
+    font-size: 24px; /* Set the font size */
+    line-height: 36px; /* Set the line height */
+    letter-spacing: -0.5px; /* Set the letter spacing */
+    margin-left: 19%;
+}
+/* Image container */
+/* Main container for both image and text */
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px; /* Gap between the image and text containers */
+}
+
+/* Image container */
+/* Content container */
+.content-container {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 70px; /* Gap between the image and text containers */
+}
+
+/* Image container */
+.image-container {
+width: 578px;
+height: 382px;
+border: 2px solid #444343; /* Border for the image container */
+border-radius: 15px; /* Rounded corners */
+overflow: hidden; /* To ensure the image doesn't overflow the rounded borders */
+box-sizing: border-box; /* Ensures padding and borders are included in the width/height */
+}
+
+.image-container img {
+object-fit: cover;
+width: 80%;
+height: 80%;
+}
+
+/* Text container */
+.text-container {
+width: 578px;
+height: 382px;
+border: 2px solid #444343; /* Border for the text box */
+border-radius: 15px; /* Rounded corners */
+box-sizing: border-box; /* Ensures padding and borders are included in the width/height */
+
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+font-size: 19px;
+line-height: 28px;
+letter-spacing: -0.5px;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 20px; /* Padding inside the text container */
+}
+
+/* Text container heading */
+.text-container h2 {
+font-size: 34px;
+font-weight: 600;
+margin-bottom: 15px;
+}
+
+.black-white-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 40px 0; /* Add some margin for spacing */
+}
+
+.inner-container {
+width: 1220px; /* Use a percentage for responsiveness */
+max-width: 1200px; /* Set a max-width to prevent it from getting too wide */
+border: 2px solid #444343; /* Same border color */
+border-radius: 15px; /* Same rounded corners */
+box-sizing: border-box; /* Ensure padding and borders are included */
+padding: 20px; /* Padding inside the container */
+text-align: center; /* Center the text */
+}
+
+.inner-container h2 {
+font-size: 36px; /* Font size for the heading */
+font-weight: 600; /* Font weight for the heading */
+margin-bottom: 15px; /* Space below the heading */
+}
+
+.diagram {
+display: flex; /* Use flexbox for the image container */
+justify-content: center; /* Center the image */
+align-items: center; /* Center vertically */
+}
+
+.diagram img {
+width: 100%; /* Make the image responsive */
+max-width: 1000px; /* Set a max-width for the image */
+height: auto; /* Maintain aspect ratio */
+margin-top: 20px; /* Space above the image */
+}
+body {
+background-color: black;
+color: white;
+font-family: Arial, sans-serif;
+text-align: center;
+padding: 20px;
+}
+.highlight {
+color: #b784f2;
+}
+body {
+background-color: black;
+color: white;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+.network-optimization-container {
+max-width: 1000px;
+margin: auto;
+padding: 50px 20px;
+margin-left: 13%;
+}
+
+h1 {
+font-size: 2.5rem;
+font-weight: bold;
+text-align: left;
+}
+
+.highlight {
+color: #b784f2;
+}
+
+.content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 20px;
+}
+
+.ai-image-display {
+position: relative;
+}
+
+.ai-image-display {
+display: flex; /* Use flexbox for layout */
+justify-content: flex-end; /* Align items to the right */
+align-items: center; /* Center items vertically */
+margin-top: 20px; /* Space above the image */
+}
+
+.ai-label {
+position: absolute;
+bottom: 30%; /* Adjust as per your alignment */
+right: 20%; /* Adjust to position the label */
+background: url('./AI.png') no-repeat center center; /* Add the AI image */
+background-size: contain; /* Ensure the image fits within the label */
+color: white;
+padding: 20px; /* Adjust padding to match the label size */
+border-radius: 8px;
+font-size: 1.5rem;
+font-weight: bold;
+font-family: Arial, sans-serif;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+text-align: center; /* Center the text within the label */
+
+}
+
+
+/* Feature Highlights Aligned to the Right */
+.feature-highlights {
+display: flex; /* Use flexbox */
+flex-direction: column; /* Stack items vertically */
+align-items: center; /* Center items horizontally */
+gap: 20px; /* Space between the cards */
+margin-top: 20px;
+}
+
+.feature-card {
+display: flex; /* Use flexbox for each card */
+align-items: center; /* Center items vertically */
+border: 1px solid #323232; /* Optional: Add a border for better visibility */
+padding: 15px;
+border-radius: 8px;
+width: 300px; /* Adjust width as needed */
+text-align: left; /* Align text to the left */
+}
+
+.feature-card img {
+width: 80px; /* Set the desired width */
+height: auto; /* Maintain aspect ratio */
+margin-bottom: 10px; /* Space between the image and text */
+}
+
+.network-description {
+margin-top: 30px;
+font-size: 1.1rem;
+line-height: 1.5;
+margin-left: 9%;
+color: #a590c1;
+}
+
+.inspiration-section {
+text-align: left; /* Align text to the left */
+margin-top: 40px; /* Space above the section */
+padding-left: 100px; /* Add left padding */
+width: 100%; /* Set the width */
+color: white; /* Text color */
+}
+
+.inspiration-title {
+font-size: 38px; /* Font size for the title */
+font-weight: bold; /* Make the title bold */
+margin-bottom: 50px;
+margin-left: 10%; /* Space below the title */
+color: linear-gradient(270deg, #B57FFF 33.18%, #F2F0F5 65.22%);
+}
+
+.inspiration-paragraph {
+font-size: 18px; /* Font size for the paragraph */
+line-height: 1.6; /* Line height for better readability */
+max-width: 800px; /* Optional: Set a max width for the paragraph */
+margin: 0; /* Remove default margin */
+margin-left: 10%;
+margin-top: 50px;
+color: #a590c1;
+}
+.inspiration-author {
+font-size: 24px; /* Optional: Adjust font size for the author's name */
+font-style: italic; /* Optional: Make the author's name italic */
+margin-left: 10%; /* Align with the title */
+margin-top: 5px; /* Space above the author's name */
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+body {
+background: radial-gradient(circle, rgba(18,18,18,1) 0%, rgba(0,0,0,1) 100%);
+color: #fff;
+text-align: center;
+}
+
+
+
+
+/* Form Container */
+.form-container {
+max-width: 600px;
+margin: 50px auto;
+padding: 25px;
+background-color: rgba(20, 20, 20, 0.9); /* Darkened background */
+border-radius: 12px;
+box-shadow: 0 0 20px rgba(183, 106, 255, 0.4); /* Purple glow effect */
+width: 25%;
+}
+
+/* Heading */
+.texting {
+font-size: 2em;
+color: #fff;
+margin-top: 15%;
+}
+.texting-para{
+margin-top: 5%;
+font-size: 20px;
+}
+
+.texting span {
+color: #b76aff; /* Purple accent */
+}
+
+/* Description */
+p {
+color: #bbb;
+margin: 15px 0;
+}
+
+/* Form Styling */
+.type-container {
+margin-top: 20px;
+}
+
+form {
+display: flex;
+flex-direction: column;
+}
+form label {
+display: block;
+margin-bottom: 0.5rem;
+color: #fff;
+text-align: left; /* Align labels to the left */
+}
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="url"] {
+padding: 12px;
+margin: 10px 0;
+background: #111;
+border: 1px solid rgba(255, 255, 255, 0.2);
+border-radius: 8px;
+font-size: 1em;
+color: #fff;
+transition: 0.3s ease-in-out;
+}
+
+input::placeholder {
+color: rgba(255, 255, 255, 0.5);
+}
+
+input:focus {
+border-color: #b76aff;
+box-shadow: 0 0 10px rgba(183, 106, 255, 0.5);
+outline: none;
+}
+
+/* Submit Button */
+.submit-btn {
+padding: 12px;
+background: linear-gradient(90deg, #7200ca, #b76aff);
+color: white;
+border: none;
+border-radius: 8px;
+font-size: 1em;
+cursor: pointer;
+transition: 0.3s ease-in-out;
+box-shadow: 0 0 15px rgba(183, 106, 255, 0.5);
+text-transform: uppercase;
+font-weight: bold;
+}
+
+.submit-btn:hover {
+background: linear-gradient(90deg, #b76aff, #7200ca);
+box-shadow: 0 0 25px rgba(183, 106, 255, 0.8);
+}
+
+body {
+background-color: #000;
+color: #bbb;
+}
+
+
+.footer {
+   
+    color: #bbb;
+    padding: 50px 80px;
+    font-size: 14px;
+    width: 100%;
+}
+
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+padding-left: 20px; /* Add padding to the left */
+}
+
+/* Left Section */
+.footer-left {
+max-width: 300px;
+
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 10px;
+font-size: 18px;
+font-weight: bold;
+color: #fff;
+}
+
+.logo-image {
+height: 24px;
+}
+
+.footer-left p {
+color: #888;
+font-size: 14px;
+margin-top: 10px;
+}
+
+.social-icons {
+display: flex;
+gap: 15px;
+margin-top: 10px;
+
+}
+
+.social-icons a {
+
+color: #333; /* Color for social icons */
+text-decoration: none;
+
+}
+social-icons a:last-child {
+margin-right: 0; /* Remove margin from the last icon */
+}
+
+.social-icons a:first-child {
+margin-right: 40px; /* Add extra space after the LinkedIn icon */
+}
+
+.social-icons a:hover {
+color: #b76aff;
+}
+
+/* Right Section */
+.footer-right {
+display: flex;
+gap: 80px;
+margin-right: 10px;
+width: calc(100% - 1100px);
+}
+
+.footer-column h3 {
+color: #fff;
+font-size: 16px;
+margin-bottom: 10px;
+margin-left: 20%;
+
+}
+
+.footer-column ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-column ul li {
+margin-bottom: 14px;
+}
+
+.footer-column ul li a {
+text-decoration: none;
+color: #bbb;
+font-size: 14px;
+transition: color 0.3s ease-in-out;
+color: #a590c1;
+}
+
+.footer-column ul li a:hover {
+color: #b76aff;
+}
+
+/* Bottom Section */
+.footer-bottom {
+display: flex;
+justify-content: flex-start; /* Align items to the left */
+align-items: center;
+padding-top: 20px;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+font-size: 12px;
+color: #666;
+width: 100%; /* Ensure it takes the full width */
+}
+.policy-links {
+margin-left: auto; /* Pushes the policy links to the right */
+margin-right: 9%;
+}
+.policy-links a {
+color: #b76aff;
+text-decoration: none;
+margin-left: 20px;
+}
+
+.policy-links a:hover {
+text-decoration: underline;
+}
+  
